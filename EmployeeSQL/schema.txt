@@ -1,0 +1,47 @@
+# Employee DB
+
+
+
+Departments
+-
+Dept_No VARCHAR PK
+Dept_Name VARCHAR
+
+Employees
+-
+Emp_No INTEGER PK
+Birth_Date VARCHAR
+First_Name VARCHAR
+Last_Name VARCHAR
+Gender VARCHAR
+Hire_Date VARCHAR
+
+Salaries
+-
+Emp_no INTEGER PK FK - Employees.Emp_No
+Salary INTEGER
+From_date VARCHAR
+To_date VARCHAR
+
+Titles
+-
+Emp_no INTEGER FK - Employees.Emp_No
+Title VARCHAR
+From_date VARCHAR
+To_date VARCHAR
+
+Dept_Employee
+-
+Emp_no INTEGER PK FK - Employees.Emp_No
+Dept_No VARCHAR PK FK - Departments.Dept_No
+From_Date VARCHAR
+To_Date VARCHAR
+
+Dept_Manager
+-
+Dept_No VARCHAR PK FK - Departments.Dept_No
+Emp_no INTEGER PK FK - Employees.Emp_No
+From_Date VARCHAR
+To_Date VARCHAR
+
+
