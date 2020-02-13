@@ -54,8 +54,8 @@ CREATE TABLE Dept_Employee (
     Emp_no INTEGER   NOT NULL,
     Dept_No VARCHAR   NOT NULL,
     From_Date VARCHAR   NOT NULL,
-    To_Date VARCHAR   NOT NULL
-    CONSTRAINT pk_Salaries PRIMARY KEY (
+    To_Date VARCHAR   NOT NULL,
+    CONSTRAINT pk_Dept_Employee PRIMARY KEY (
         Emp_no,
 		Dept_No
      )
@@ -65,8 +65,8 @@ CREATE TABLE Dept_Manager (
     Dept_No VARCHAR   NOT NULL,
     Emp_no INTEGER   NOT NULL,
     From_Date VARCHAR   NOT NULL,
-    To_Date VARCHAR   NOT NULL
-    CONSTRAINT pk_Salaries PRIMARY KEY (
+    To_Date VARCHAR   NOT NULL,
+    CONSTRAINT pk_Dept_Manager PRIMARY KEY (
         Emp_no,
 		Dept_No
      )
