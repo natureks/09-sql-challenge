@@ -25,7 +25,7 @@ To_date VARCHAR
 
 Titles
 -
-Emp_no INTEGER FK - Employees.Emp_No
+Emp_no INTEGER FK >- Employees.Emp_No
 Title VARCHAR
 From_date VARCHAR
 To_date VARCHAR
@@ -33,7 +33,7 @@ To_date VARCHAR
 Dept_Employee
 -
 Emp_no INTEGER PK FK - Employees.Emp_No
-Dept_No VARCHAR PK FK - Departments.Dept_No
+Dept_No VARCHAR PK FK >- Departments.Dept_No
 From_Date VARCHAR
 To_Date VARCHAR
 
